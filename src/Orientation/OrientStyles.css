@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .card {
+    flex: 1;
+    background-color: #eaeaea;
+    padding: 10px;
+    justify-content: space-between;
+  }
+  img{
+    height:300px;
+  }
+  btn{
+    position:"relative";
+    top:50%;
+  }
