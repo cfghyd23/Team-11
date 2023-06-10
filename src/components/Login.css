@@ -1,38 +1,38 @@
-.registration-form {
-  max-width: 400px;
+.login-form {
+  max-width: 300px;
   margin: 0 auto;
-  margin-top: 50px;
-  color: black;
+  padding: 20px;
   border: 1px solid #ccc;
-  padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
+  color:black
 }
 
-.registration-form h2 {
+.login-form h2 {
   text-align: center;
   margin-bottom: 20px;
 }
 
-.registration-form label {
+.login-form label {
   display: block;
   margin-bottom: 5px;
+  border-radius: 20px;
 }
 
-.registration-form input,
-.registration-form button {
+.login-form input,
+.login-form button {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
-  border-radius: 5px;
 }
 
-.registration-form button {
+.login-form button {
   background-color: #4caf50;
   color: #fff;
   border: none;
   cursor: pointer;
+  border-radius: 5px;
 }
 
-.registration-form button:hover {
+.login-form button:hover {
   background-color: #45a049;
 }

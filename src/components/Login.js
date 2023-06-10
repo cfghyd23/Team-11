@@ -1,12 +1,14 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import PostLogin from "./PostLogin";
+import "./Login.css";
+import { Routes, Route, Link, useNavigate, Navigate } from "react-router-dom";
 const Login = () => {
   //setting initial states
   const [users, setUsers] = useState([]);
-  const [user, setUser] = useState("");
+  const [user, setUser] = useState(null);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [flag, setFlag] = useState(false);
   useEffect(() => {
     getUserData();
   }, []);
@@ -17,42 +19,49 @@ const Login = () => {
     console.log(users);
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // console.log(e.target.value);
+    debugger;
     users.map((user1) => {
-      if (user1.email == email || user1.password == password) {
-        console.log(user1);
-        setUser(user1);
+      if (user1.email == email && user1.password == password) {
+        console.log("user1: ", user1);
+        setFlag(true);
+        sessionStorage.setItem("user", JSON.stringify(user1));
       }
     });
+    // return <PostLogin user={user} />;
   };
 
   return (
     <div className="container-fluid first text-white">
-      {user == "" && (
-        <div className="login-form">
-          <h2>Login Form</h2>
-          <form onSubmit={handleSubmit}>
-            <label htmlFor="email">Email:</label>
-            <input
-              type="email"
-              id="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
+      <div className="login-form">
+        <h2>Login Form</h2>
+        <form onSubmit={handleSubmit}>
+          <label htmlFor="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
 
-            <label htmlFor="password">Password:</label>
-            <input
-              type="password"
-              id="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
+          <label htmlFor="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
 
-            <button type="submit">Login</button>
-          </form>
-        </div>
-      )}
-      {user !== "" && <PostLogin user={user} />}
+          <button type="submit">
+            <Link className="navbar-brand" href="#" to="postLogin">
+              Login
+            </Link>
+          </button>
+        </form>
+      </div>
+      {flag && <Navigate to="/postLogin" replace={true} />}
     </div>
   );
 };

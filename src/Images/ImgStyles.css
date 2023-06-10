@@ -1,0 +1,15 @@
+
+body{
+    overflow-x:hidden;
+    overflow-y:scroll;
+}
+img
+{
+  width: 100%; /* Set container width to full viewport width */
+ min-height:50px; /* Set container height to full viewport height */
+  background-size: cover; /* Scale the image to cover the container */
+  background-position: center; /* Center the image within the container */
+  position:relative;
+  filter: brightness(40%);
+  
+}
