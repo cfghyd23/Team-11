@@ -1,67 +1,67 @@
-// import React, { useState } from 'react';
-// import { jsPDF } from 'jspdf';
-// import './certification.css';
+//  import React, { useState } from 'react';
+//  import { jsPDF } from 'jspdf';
+//  import './certification.css';
 
 // const Certificate = () => {
-//   const [name, setName] = useState('');
-//   const [days, setDays] = useState(0);
+//    const [name, setName] = useState('');
+//    const [days, setDays] = useState(0);
 //   const [funds, setFunds] = useState(0);
 
-//   const handleDownload = () => {
-//     if (days >= 10 && funds >=1000) {
+//    const handleDownload = () => {
+//      if (days >= 10 && funds >=1000) {
 //       if (name.trim() !== '') {
-//         const doc = new jsPDF();
-//         doc.setFontSize(24);
-//         doc.text(`Certificate of completing Internship`, 105, 40, { align: 'center' });
-//         doc.setFontSize(18);
-//         doc.text(`This is to certify that Mr.`, 105, 60, { align: 'center' });
-//         doc.setFontSize(24);
+//          const doc = new jsPDF();
+//          doc.setFontSize(24);
+//          doc.text(`Certificate of completing Internship`, 105, 40, { align: 'center' });
+//          doc.setFontSize(18);
+//          doc.text(`This is to certify that Mr.`, 105, 60, { align: 'center' });
+//          doc.setFontSize(24);
 //         doc.text(`has successfully completed the 10 period internship`,105,100,{align: 'center'});
-//         doc.text(`${name}`, 105, 80, { align: 'center' });
-//         doc.save('certificate.pdf');
-//       } else {
-//         alert('Please enter your name.');
-//       }
-//     } else {
-//       alert('You do not meet the criteria for downloading the certificate.');
-//     }
+//          doc.text(`${name}`, 105, 80, { align: 'center' });
+//          doc.save('certificate.pdf');
+//        } else {
+//          alert('Please enter your name.');
+//        }
+//      } else {
+//        alert('You do not meet the criteria for downloading the certificate.');
+//    }
 //   };
 
 //   return (
-//     <div className="container">
-//       <h1 className="blinking">Certificate Page</h1>
-//       <div className="centered-form">
-//         <div className="form-group">
+//      <div className="container">
+//        <h1 className="blinking">Certificate Page</h1>
+//        <div className="centered-form">
+//          <div className="form-group">
 //           <label htmlFor="name">Your Name:</label>
-//           <input
-//             type="text"
-//             id="name"
+//            <input
+//              type="text"
+//              id="name"
 //             value={name}
 //             onChange={(e) => setName(e.target.value)}
-//           />
-//         </div>
-//         <div className="form-group">
+//            />
+//          </div>
+//          <div className="form-group">
 //           <label htmlFor="days">Number of days:</label>
 //           <input
-//             type="number"
+//              type="number"
 //             id="days"
-//             value={days}
-//             onChange={(e) => setDays(parseInt(e.target.value))}
-//           />
+//              value={days}
+//              onChange={(e) => setDays(parseInt(e.target.value))}
+//            />
 //         </div>
-//         <div className="form-group">
+//          <div className="form-group">
 //           <label htmlFor="funds">Funds:</label>
 //           <input
 //             type="number"
 //             id="funds"
 //             value={funds}
 //             onChange={(e) => setFunds(parseInt(e.target.value))}
-//           />
-//         </div>
-//         <button onClick={handleDownload}>Download Certificate</button>
-//       </div>
-//     </div>
-//   );
-// };
+//            />
+//          </div>
+//          <button onClick={handleDownload}>Download Certificate</button>
+//        </div>
+//      </div>
+//    );
+//  };
 
 // export default Certificate;
