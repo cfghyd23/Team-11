@@ -44,7 +44,7 @@ const Topbar = () => {
           {/* <Route path="/certificate" element={<Certificate />} /> */}
           <Route path="/login" element={<Login />} />
           <Route path="/register/*" element={<Registration />} />
-          <Route path="/postLogin" component={<PostLogin />} />
+          <Route path="/postLogin" element={<PostLogin />} />
         </Routes>
       </div>
     </div>
