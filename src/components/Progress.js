@@ -1,37 +1,43 @@
-import { useState, useEffect } from "react";
-import axios from "axios";
+import { useState } from 'react';
+
+import './Progress.css';
 const Progress = () => {
-  
-  const [users, setUsers] = useState([]);
-  const [user, setUser] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  useEffect(() => {
-    getUserData();
-  }, []);
-
-
-  const getUserData = async ()=>{
-
-   
-
-    let current = await axios.get("http://localhost:4000/users");
-    setUsers(current);
-    console.log(users);
+  const [name, setName] = useState("");
+  const [goalMoney, setGoalMoney] = useState("");
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    alert(`The Total Outstanding amount is: ${name}`)
   }
+
+    const user=JSON.parse(sessionStorage.getItem('user'));
+    console.log(user)
+
+  return (
+    <div>
+      
+      <div class="split left">
+        <div class="centered">
+        <form onSubmit={handleSubmit}>
+          <label>Enter Amount Completed today:
+            <input 
+              type="number" 
+              value={goalMoney}
+              onChange={(e) => setGoalMoney(e.target.value)}
+            />
+          </label>
+          <input type="submit" />
+      </form>
+        </div>
+    </div>
+    <div class="split right">
+  <div class="centered">
     
-  
-  return(
-<>
-
-</>
-  ) 
-   
-   
-
-
- 
-};
-
+    <h2>Name:{name}</h2>
+    <p><h2>Amount Pledged :{goalMoney}</h2>.</p>
+  </div>
+</div>
+    </div>
+  )  
+}
 
 export default Progress;
