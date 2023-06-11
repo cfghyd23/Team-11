@@ -1,6 +1,6 @@
 import React from 'react'
 import ImgEco from '../Images/ImgEco'
-import Economic from '../content/Economic'
+import Economic from '../components/content/Economic'
 export default function Eco() {
   return (
     <div>

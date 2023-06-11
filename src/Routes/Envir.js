@@ -1,6 +1,6 @@
 import React from 'react'
 import ImgEnvir from '../Images/ImgEnvir'
-import Environment from '../content/Environment'
+import Environment from '../components/content/Environment'
 export default function Envir() {
   return (
     <div>

@@ -1,6 +1,5 @@
 import React from "react";
 import { Routes, Route,Link } from "react-router-dom";
-import Envir from "../content/Environment";
 import "./OrientStyles.css";
 export default function Orient() {
   return (

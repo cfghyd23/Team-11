@@ -42,6 +42,7 @@ const Topbar = () => {
               <Link className="navbar-brand" href="#" to="register">
                 Register
               </Link>
+              <button type="button">Logout</button>
             </div>
 
             {/* {
@@ -62,10 +63,10 @@ const Topbar = () => {
           <Route path="/register/*" element={<Registration />} />
           <Route path="/postLogin" element={<PostLogin />} />
           <Route path="/login/postLogin" element={<PostLogin />} />
-          <Route path="/orientation/Envir" element={<Envir />} />
-          <Route path="/orientation/Eco" element={<Eco />} />
-          <Route path="/orientation/Soc" element={<Soc />} />
-          <Route path="/orientation/OtherS" element={<OtherS />} />
+          <Route path="/login/postLogin/Envir" element={<Envir />} />
+          <Route path="/login/postLogin/Eco" element={<Eco />} />
+          <Route path="/login/postLogin/Soc" element={<Soc />} />
+          <Route path="/login/postLogin/OtherS" element={<OtherS />} />
         </Routes>
       </div>
     </div>
