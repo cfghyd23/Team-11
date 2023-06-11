@@ -1,10 +1,10 @@
 import React from 'react'
-import ImgEnvir from '../Images/ImgEnvir'
+import ImgOthers from '../Images/ImgOthers'
 import Others from '../content/Others'
 export default function Envir() {
   return (
     <div>
-      <ImgEnvir img="https://media.istockphoto.com/id/1327919661/photo/world-earth-day-concept-green-energy-renewable-and-sustainable-resources-environmental-and.jpg?s=612x612&w=0&k=20&c=6PvLRMFPI65ATEs-XWPJ_UOtkmSKoONOD4h7Lohq850="></ImgEnvir>
+      <ImgOthers img="https://media.istockphoto.com/id/492878594/photo/teamwork.jpg?s=612x612&w=0&k=20&c=zJ1NtL3NdsKeP_aeYkJB8yyf6-i0uD3EjFVvz7IZaJY="></ImgOthers>
       <Others/>
     </div>
   )
