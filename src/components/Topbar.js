@@ -21,7 +21,7 @@ const Topbar = () => {
             <Link className="navbar-brand " href="#" to="">
               Marpu
             </Link>
-            <Link className="navbar-brand" href="#" to="orientation">
+            {/* <Link className="navbar-brand" href="#" to="orientation">
               Orientations{" "}
             </Link>
             <Link className="navbar-brand" href="#" to="progress">
@@ -33,6 +33,8 @@ const Topbar = () => {
             {/* <Link className="navbar-brand" href="#" to="certificate">
               Certificate
             </Link> */}
+            {/* {
+                !sessionStorage.getItem('user') && */}
             <div className="align-left">
               <Link className="navbar-brand" href="#" to="login">
                 Login
@@ -41,6 +43,13 @@ const Topbar = () => {
                 Register
               </Link>
             </div>
+
+            {/* {
+                sessionStorage.getItem('user') && 
+                <div className="align-left">
+              <Button onClick={()=>{}}>Logout</Button>
+            </div>  
+            } */}
           </div>
         </nav>
         <Routes>
@@ -51,7 +60,8 @@ const Topbar = () => {
           {/* <Route path="/certificate" element={<Certificate />} /> */}
           <Route path="/login" element={<Login />} />
           <Route path="/register/*" element={<Registration />} />
-          <Route path="/postLogin" component={<PostLogin />} />
+          <Route path="/postLogin" element={<PostLogin />} />
+          <Route path="/login/postLogin" element={<PostLogin />} />
           <Route path="/orientation/Envir" element={<Envir />} />
           <Route path="/orientation/Eco" element={<Eco />} />
           <Route path="/orientation/Soc" element={<Soc />} />

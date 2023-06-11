@@ -1,5 +1,5 @@
 .registration-form {
-  max-width: 400px;
+  max-width: 500px;
   margin: 0 auto;
   margin-top: 50px;
   color: black;
@@ -17,7 +17,9 @@
   display: block;
   margin-bottom: 5px;
 }
+.registration-form form-check{
 
+}
 .registration-form input,
 .registration-form button {
   width: 100%;
@@ -27,7 +29,7 @@
 }
 
 .registration-form button {
-  background-color: #4caf50;
+  background-color: #141b14;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -36,3 +38,6 @@
 .registration-form button:hover {
   background-color: #45a049;
 }
+
+
+
