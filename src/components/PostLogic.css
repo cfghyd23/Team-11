@@ -1,0 +1,12 @@
+.first {
+  margin-top: 20rem;
+}
+
+.buttons-class{
+  margin-top: 5rem;
+}
+
+.buttons-class button{
+  max-width: 30%;
+  background-color: rgb(94, 94, 233);
+}
