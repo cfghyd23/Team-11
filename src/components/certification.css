@@ -1,13 +1,14 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-  }
+.middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
   
   .blinking {
     animation: blink-animation 1s infinite;
+    color: blue;
   }
   
   @keyframes blink-animation {
@@ -22,7 +23,7 @@
     }
   }
   
-  .centered-form {
+  .centered-form2 {
     max-width: 400px;
     width: 100%;
     padding: 20px;
@@ -32,7 +33,7 @@
     border-radius: 4px;
   }
   
-  .form-group {
+  .form-group2 {
     margin-bottom: 20px;
   }
   
@@ -69,10 +70,5 @@
   button:hover {
     background-color: #0056b3;
   }
-  body {
-    background-image: url("img2.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-  }
+
+ 
