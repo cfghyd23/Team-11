@@ -3,8 +3,6 @@
 
  import { jsPDF } from 'jspdf';
  import './certification.css';
-import Imgmu from '../Images/Imgmu';
-
  const Certificate = () => {
   const [name, setName] = useState('');
  const [days, setDays] = useState(0);
@@ -19,7 +17,7 @@ import Imgmu from '../Images/Imgmu';
         doc.setFontSize(18);
         doc.text(`This is to certify that Mr.`, 105, 60, { align: 'center' });
          doc.setFontSize(24);
-         doc.text(`has successfully completed the 10 period internship`,105,100,{align: 'center'});
+         doc.text(`has successfully completed the 10 day internship`,105,100,{align: 'center'});
          doc.text(`${name}`, 105, 80, { align: 'center' });
          doc.save('certificate.pdf');
        } else {

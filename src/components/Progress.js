@@ -6,15 +6,15 @@ const Progress = () => {
   const [user, setuser] = useState(null);
 
   useEffect(() => {
-    setuser(JSON.parse(sessionStorage.getItem("user")));
+    setuser(JSON.parse(localStorage.getItem("userData")));
   }, []);
 
   const handleSubmit = (event) => {
     event.preventDefault();
     // alert(`The Total Outstanding amount is: ${Number(user.goalMoney)}`)
     user.currentRaised = (+user.currentRaised + +money).toString();
-    sessionStorage.setItem("user", JSON.stringify(user));
-    setuser(JSON.parse(sessionStorage.getItem("user")));
+    localStorage.setItem("userData", JSON.stringify(user));
+    setuser(JSON.parse(localStorage.getItem("userData")));
   };
 
   return (
