@@ -1,6 +1,6 @@
 import React from "react";
 import "./Topbar.css";
-import {Router, Routes, Route, Link } from "react-router-dom";
+import { Router, Routes, Route, Link } from "react-router-dom";
 import MarpuFound from "./MarpuFound";
 import Registration from "./Registration";
 import Login from "./Login";
@@ -8,11 +8,14 @@ import Login from "./Login";
 import Progress from "./Progress";
 import Orientations from "./Orientations";
 import PostLogin from "./PostLogin";
-import Envir from '../Routes/Envir';
-import Eco from '../Routes/Eco';
-import Soc from '../Routes/Soc';
-import OtherS from '../Routes/OtherS';
+import Envir from "../Routes/Envir";
+import Eco from "../Routes/Eco";
+import Soc from "../Routes/Soc";
+import OtherS from "../Routes/OtherS";
 const Topbar = () => {
+  const handleClick = () => {
+    sessionStorage.clear();
+  };
   return (
     <div>
       <div className="App">
@@ -35,6 +38,8 @@ const Topbar = () => {
             </Link> */}
             {/* {
                 !sessionStorage.getItem('user') && */}
+
+               
             <div className="align-left">
               <Link className="navbar-brand" href="#" to="login">
                 Login
@@ -42,7 +47,9 @@ const Topbar = () => {
               <Link className="navbar-brand" href="#" to="register">
                 Register
               </Link>
-              <button type="button">Logout</button>
+              <button type="button bg-primary" onClick={() => handleClick}>
+                Logout
+              </button>
             </div>
 
             {/* {
@@ -54,9 +61,8 @@ const Topbar = () => {
           </div>
         </nav>
         <Routes>
-        
           <Route path="/" element={<MarpuFound />} />
-          <Route path="/orientation" element={<Orientations />} />         
+          <Route path="/orientation" element={<Orientations />} />
           <Route path="/progress" element={<Progress />} />
           {/* <Route path="/certificate" element={<Certificate />} /> */}
           <Route path="/login" element={<Login />} />

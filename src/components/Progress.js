@@ -19,8 +19,8 @@ const Progress = () => {
 
   return (
     <div>
-      <div class="split left">
-        <div class="centered">
+      <div className="split left">
+        <div className="centered">
           <form onSubmit={handleSubmit}>
             <label>
               Enter Amount Completed today:
@@ -34,12 +34,10 @@ const Progress = () => {
           </form>
         </div>
       </div>
-      <div class="split right">
-        <div class="centered">
-          <h2>Name:{user?user.name:"error"}</h2>
-          <p>
-            <h2>Amount Pledged :{user ? user.goalMoney : "error"}</h2>.
-          </p>
+      <div className="split right">
+        <div className="centered">
+          <h2>Name:{user ? user.name : "error"}</h2>
+          <h2>Amount Pledged :{user ? user.goalMoney : "error"}</h2>.
           <p>
             Amount left to donate :{" "}
             {user ? +user.goalMoney - +user.currentRaised : "error"}
