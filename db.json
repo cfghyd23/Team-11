@@ -76,6 +76,17 @@
       "currentRaised": "",
       "duration": 10,
       "id": 7
+    },
+    {
+      "email": "akhilesh.kumandan@gmail.com",
+      "password": "bored",
+      "name": "Akhilesh Kumandan",
+      "gender": "male",
+      "cause": "sdc",
+      "goalMoney": "10000",
+      "currentRaised": "",
+      "duration": 10,
+      "id": 8
     }
   ]
 }
