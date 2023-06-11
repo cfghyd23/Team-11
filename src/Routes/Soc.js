@@ -1,6 +1,6 @@
 import React from 'react'
 import ImgSoc from '../Images/ImgSoc'
-import Social from '../content/Social'
+import Social from '../components/content/Social'
 export default function Envir() {
   return (
     <div>

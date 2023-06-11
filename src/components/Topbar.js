@@ -42,6 +42,7 @@ const Topbar = () => {
               <Link className="navbar-brand" href="#" to="register">
                 Register
               </Link>
+              <button type="button">Logout</button>
             </div>
 
             {/* {
