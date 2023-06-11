@@ -1,7 +1,7 @@
 import React from "react";
 import "./Topbar.css";
 import {Router, Routes, Route, Link } from "react-router-dom";
-import Cryptocurrency from "./Cryptocurrency";
+import MarpuFound from "./MarpuFound";
 import Registration from "./Registration";
 import Login from "./Login";
 // import Certificate from './Certificate';
@@ -54,7 +54,7 @@ const Topbar = () => {
         </nav>
         <Routes>
         
-          <Route path="/" element={<Cryptocurrency />} />
+          <Route path="/" element={<MarpuFound />} />
           <Route path="/orientation" element={<Orientations />} />         
           <Route path="/progress" element={<Progress />} />
           {/* <Route path="/certificate" element={<Certificate />} /> */}
