@@ -27,7 +27,7 @@ const Login = () => {
       if (user1.email == email && user1.password == password) {
         console.log("user5551: ", user1);
         setFlag(true);
-        localStorage.setItem("user", JSON.stringify(user1));
+        sessionStorage.setItem("user", JSON.stringify(user1));
       }
     });
     // return <PostLogin user={user} />;

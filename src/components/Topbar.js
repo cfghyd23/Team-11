@@ -8,6 +8,7 @@ import Login from "./Login";
 import Progress from "./Progress";
 import Orientations from "./Orientations";
 import PostLogin from "./PostLogin";
+import { Button } from "bootstrap";
 
 const Topbar = () => {
   return (
@@ -18,15 +19,17 @@ const Topbar = () => {
             <Link className="navbar-brand " href="#" to="">
               Marpu
             </Link>
-            <Link className="navbar-brand" href="#" to="orientation">
+            {/* <Link className="navbar-brand" href="#" to="orientation">
               Orientations{" "}
             </Link>
             <Link className="navbar-brand" href="#" to="progress">
               Progress
-            </Link>
+            </Link> */}
             {/* <Link className="navbar-brand" href="#" to="certificate">
               Certificate
             </Link> */}
+            {/* {
+                !sessionStorage.getItem('user') && */}
             <div className="align-left">
               <Link className="navbar-brand" href="#" to="login">
                 Login
@@ -35,16 +38,24 @@ const Topbar = () => {
                 Register
               </Link>
             </div>
+
+            {/* {
+                sessionStorage.getItem('user') && 
+                <div className="align-left">
+              <Button onClick={()=>{}}>Logout</Button>
+            </div>  
+            } */}
           </div>
         </nav>
         <Routes>
           <Route path="/" element={<Cryptocurrency />} />
-          <Route path="/orientation" element={<Orientations />} />
-          <Route path="/progress" element={<Progress />} />
+          {/* <Route path="/orientation" element={<Orientations />} />
+          <Route path="/progress" element={<Progress />} /> */}
           {/* <Route path="/certificate" element={<Certificate />} /> */}
           <Route path="/login" element={<Login />} />
           <Route path="/register/*" element={<Registration />} />
           <Route path="/postLogin" element={<PostLogin />} />
+          <Route path="/login/postLogin" element={<PostLogin />} />
         </Routes>
       </div>
     </div>

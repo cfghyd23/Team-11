@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="bg-dark">
       <Router>
         <Topbar />
       </Router>
