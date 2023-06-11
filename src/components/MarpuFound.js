@@ -2,7 +2,7 @@ import React from 'react';
 import './MarpuFound.css'
 const MarpuFound = () => {
     return (
-        <div className='container first' >
+        <div className='first' >
             <h2 className='display-3'>What is Marpu Foundation?</h2>
             <p className='lead'>Marpu Foundation is a nationwide volunteering
 movement that inspires youth to volunteer and

@@ -77,8 +77,8 @@ const Registration = () => {
           <label>Gender:</label>
           <br />
           <div>
-          <label htmlFor="male" className="form-check-label">
-            <input
+          <label htmlFor="male" className="form-check-label labelClass">
+            Male            <input
             className="float-right"
               type="radio"
               id="male"
@@ -86,11 +86,12 @@ const Registration = () => {
               checked={gender === "male"}
               onChange={(e) => setGender(e.target.value)}
             />
-            Male
+          
           </label>
           </div>
           <div>
-          <label htmlFor="female" className="form-check-label">
+          <label htmlFor="female" className="form-check-label labelClass">
+            Female
             <input
             
               type="radio"
@@ -99,12 +100,13 @@ const Registration = () => {
               checked={gender === "female"}
               onChange={(e) => setGender(e.target.value)}
             />
-            Female
+            
           </label>
           </div>
 
             <div>
-          <label htmlFor="other" className="form-check-label">
+          <label htmlFor="other" className="form-check-label labelClass">
+           Other
             <input
             // className="form-check-input"
               type="radio"
@@ -113,7 +115,7 @@ const Registration = () => {
               checked={gender === "other"}
               onChange={(e) => setGender(e.target.value)}
             />
-            Other
+            
           </label>
           </div>
           </div>

@@ -15,7 +15,8 @@
 
 .registration-form label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  position: relative;
 }
 .registration-form form-check{
 
@@ -39,5 +40,13 @@
   background-color: #45a049;
 }
 
+.labelClass
+{
+  display: flex   !important;
+  align-items: center !important;
+  
+}
 
-
+.labelClass input {
+  margin-bottom:0 !important;
+}
