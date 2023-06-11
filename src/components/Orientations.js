@@ -1,10 +1,13 @@
 import { useState, useEffect } from 'react';
 import React from 'react';
-import axios from 'axios';
+
+import Orient from '../Orientation/Orient'
+
+// import axios from 'axios';
 const Orientations = () => {
     return (
         <div className='mt-5'>
-            hello
+            <Orient/>        
         </div>
     )
 }

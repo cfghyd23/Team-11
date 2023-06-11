@@ -28,12 +28,12 @@ const Registration = () => {
       currentRaised,
       duration: 10,
     };
-
+    console.log(Obj);
     let response = await axios.post("http://localhost:4000/users", Obj);
     console.log(response);
 
     if (response.status === 201) {
-      alert("Success:Added in watchlist");
+      alert("Registration successfull");
     }
   };
 
@@ -73,11 +73,13 @@ const Registration = () => {
             value={phoneNumber}
             onChange={(e) => setPhoneNumber(e.target.value)}
           />
-
+          <div className="flex flex-wrap" >
           <label>Gender:</label>
-
-          <label htmlFor="male">
+          <br />
+          <div>
+          <label htmlFor="male" className="form-check-label">
             <input
+            className="float-right"
               type="radio"
               id="male"
               value="male"
@@ -86,9 +88,11 @@ const Registration = () => {
             />
             Male
           </label>
-
-          <label htmlFor="female">
+          </div>
+          <div>
+          <label htmlFor="female" className="form-check-label">
             <input
+            
               type="radio"
               id="female"
               value="female"
@@ -97,9 +101,12 @@ const Registration = () => {
             />
             Female
           </label>
+          </div>
 
-          <label htmlFor="other">
+            <div>
+          <label htmlFor="other" className="form-check-label">
             <input
+            // className="form-check-input"
               type="radio"
               id="other"
               value="other"
@@ -108,6 +115,8 @@ const Registration = () => {
             />
             Other
           </label>
+          </div>
+          </div>
 
           <label htmlFor="cause">Cause:</label>
           <input
@@ -126,15 +135,15 @@ const Registration = () => {
           />
 
           <button type="submit">
-            <Link className="navbar-brand" href="#" to="login">
-              Register
-            </Link>
+            {/* <Link className="navbar-brand" href="#" to="login"> */}
+            Register
+            {/* </Link> */}
           </button>
         </form>
       </div>
-      <Routes>
+      {/* <Routes>
         <Route path="/Login" element={<Login />} />
-      </Routes>
+      </Routes> */}
     </div>
   );
 };

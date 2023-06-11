@@ -1,0 +1,28 @@
+.first{
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    align-items: center;
+}
+
+.image2{
+    height: 0%;
+    justify-self: center;
+    align-items: center;
+}
+
+.display-3{
+    text-align: center;
+}
+
+.conatiner first lead{
+    text-align: center;
+}
+
+.lead{
+    text-align: center;
+}
+
+div{
+    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.marpu.org%2F&psig=AOvVaw0eFw1zQ6sNqjXqXAPELEv4&ust=1686528483372000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCJCMk6v2uf8CFQAAAAAdAAAAABAE");
+    
+}

@@ -25,7 +25,7 @@ const Login = () => {
     debugger;
     users.map((user1) => {
       if (user1.email == email && user1.password == password) {
-        console.log("user1: ", user1);
+        console.log("user5551: ", user1);
         setFlag(true);
         sessionStorage.setItem("user", JSON.stringify(user1));
       }

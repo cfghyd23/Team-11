@@ -1,14 +1,17 @@
 import React from "react";
 import "./Topbar.css";
-import { Routes, Route, Link } from "react-router-dom";
-import Cryptocurrency from "./Cryptocurrency";
+import {Router, Routes, Route, Link } from "react-router-dom";
+import MarpuFound from "./MarpuFound";
 import Registration from "./Registration";
 import Login from "./Login";
 // import Certificate from './Certificate';
 import Progress from "./Progress";
 import Orientations from "./Orientations";
 import PostLogin from "./PostLogin";
-
+import Envir from '../Routes/Envir';
+import Eco from '../Routes/Eco';
+import Soc from '../Routes/Soc';
+import OtherS from '../Routes/OtherS';
 const Topbar = () => {
   return (
     <div>
@@ -18,15 +21,20 @@ const Topbar = () => {
             <Link className="navbar-brand " href="#" to="">
               Marpu
             </Link>
-            <Link className="navbar-brand" href="#" to="orientation">
+            {/* <Link className="navbar-brand" href="#" to="orientation">
               Orientations{" "}
             </Link>
             <Link className="navbar-brand" href="#" to="progress">
               Progress
             </Link>
+            <Link className="navbar-brand" href="#" to="certificate">
+              Certification
+            </Link>
             {/* <Link className="navbar-brand" href="#" to="certificate">
               Certificate
             </Link> */}
+            {/* {
+                !sessionStorage.getItem('user') && */}
             <div className="align-left">
               <Link className="navbar-brand" href="#" to="login">
                 Login
@@ -35,16 +43,29 @@ const Topbar = () => {
                 Register
               </Link>
             </div>
+
+            {/* {
+                sessionStorage.getItem('user') && 
+                <div className="align-left">
+              <Button onClick={()=>{}}>Logout</Button>
+            </div>  
+            } */}
           </div>
         </nav>
         <Routes>
-          <Route path="/" element={<Cryptocurrency />} />
-          <Route path="/orientation" element={<Orientations />} />
+        
+          <Route path="/" element={<MarpuFound />} />
+          <Route path="/orientation" element={<Orientations />} />         
           <Route path="/progress" element={<Progress />} />
           {/* <Route path="/certificate" element={<Certificate />} /> */}
           <Route path="/login" element={<Login />} />
           <Route path="/register/*" element={<Registration />} />
           <Route path="/postLogin" element={<PostLogin />} />
+          <Route path="/login/postLogin" element={<PostLogin />} />
+          <Route path="/orientation/Envir" element={<Envir />} />
+          <Route path="/orientation/Eco" element={<Eco />} />
+          <Route path="/orientation/Soc" element={<Soc />} />
+          <Route path="/orientation/OtherS" element={<OtherS />} />
         </Routes>
       </div>
     </div>
