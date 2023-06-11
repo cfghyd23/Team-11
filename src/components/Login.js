@@ -39,7 +39,7 @@ const Login = () => {
   };
 
   return (
-    <div className="container-fluid first text-white">
+    <div className="container-fluid first">
       <div className="login-form">
         <h2>Login Form</h2>
         <form onSubmit={handleSubmit}>

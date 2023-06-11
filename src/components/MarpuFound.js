@@ -23,11 +23,7 @@ const MarpuFound = () => {
         empathetic world through volunteering, sustainable development,
         environmental conservation,women's empowerment, and advocacy
       </p>
-      <img
-        src="http://binvested.com.au/wp-content/uploads/Should-I-invest-in-cryptocurrency.jpg"
-        className="mx-auto w-75 w-sm-80 d-block rounded image2"
-        alt="img2"
-      />
+      
     </div>
   );
 };

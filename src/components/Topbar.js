@@ -16,14 +16,15 @@ const Topbar = () => {
   const handleClick = () => {
     console.log("calling logout");
     localStorage.clear();
+    alert("Logged out");
   };
   return (
     <div>
       <div className="App">
         <nav className="navbar navbar-dark navbar-expand-lg border-bottom fixed-top">
           <div className="container container-fluid-sm container-fluid-md">
-            <Link className="navbar-brand " href="#" to="">
-              Marpu
+            <Link className="navbar-brand marpu h1" href="#" to="">
+              Marpu Foundation
             </Link>
             {/* <Link className="navbar-brand" href="#" to="orientation">
               Orientations{" "}
