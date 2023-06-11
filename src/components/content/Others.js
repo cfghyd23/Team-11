@@ -21,7 +21,7 @@ export default function Economic() {
         <li>
         Enhanced Communication and Collaboration: Promote regular and 
         transparent communication among partners to foster mutual understanding, 
-        build trust, and facilitate effective collaboration.{" "}
+        build trust, and facilitate effective collaboration.
         </li>
         <li>
         Clear Roles and Responsibilities: Define clear roles, responsibilities, 
