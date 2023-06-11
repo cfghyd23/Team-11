@@ -46,7 +46,7 @@ export default function Envir() {
           coexistence with our natural surroundings.
         </li>
       </ul>
-      <ul><p>By raising Rs. 5000 within a 10-day period, you
+      <ul><p >By raising Rs. 5000 within a 10-day period, you
       will receive a certificate from our organization as a recognition of your
       efforts. </p>
       <li>By raising Rs. 10000 within a 10-day period, you will not only
