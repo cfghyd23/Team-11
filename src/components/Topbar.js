@@ -1,6 +1,6 @@
 import React from "react";
 import "./Topbar.css";
-import { Routes, Route, Link } from "react-router-dom";
+import {Router, Routes, Route, Link } from "react-router-dom";
 import MarpuFound from "./MarpuFound";
 import Registration from "./Registration";
 import Login from "./Login";
@@ -8,8 +8,10 @@ import Login from "./Login";
 import Progress from "./Progress";
 import Orientations from "./Orientations";
 import PostLogin from "./PostLogin";
-import { Button } from "bootstrap";
-
+import Envir from '../Routes/Envir';
+import Eco from '../Routes/Eco';
+import Soc from '../Routes/Soc';
+import OtherS from '../Routes/OtherS';
 const Topbar = () => {
   return (
     <div>
@@ -24,7 +26,10 @@ const Topbar = () => {
             </Link>
             <Link className="navbar-brand" href="#" to="progress">
               Progress
-            </Link> */}
+            </Link>
+            <Link className="navbar-brand" href="#" to="certificate">
+              Certification
+            </Link>
             {/* <Link className="navbar-brand" href="#" to="certificate">
               Certificate
             </Link> */}
@@ -48,14 +53,19 @@ const Topbar = () => {
           </div>
         </nav>
         <Routes>
+        
           <Route path="/" element={<MarpuFound />} />
-          {/* <Route path="/orientation" element={<Orientations />} />
-          <Route path="/progress" element={<Progress />} /> */}
+          <Route path="/orientation" element={<Orientations />} />         
+          <Route path="/progress" element={<Progress />} />
           {/* <Route path="/certificate" element={<Certificate />} /> */}
           <Route path="/login" element={<Login />} />
           <Route path="/register/*" element={<Registration />} />
           <Route path="/postLogin" element={<PostLogin />} />
           <Route path="/login/postLogin" element={<PostLogin />} />
+          <Route path="/orientation/Envir" element={<Envir />} />
+          <Route path="/orientation/Eco" element={<Eco />} />
+          <Route path="/orientation/Soc" element={<Soc />} />
+          <Route path="/orientation/OtherS" element={<OtherS />} />
         </Routes>
       </div>
     </div>

@@ -3,47 +3,36 @@ import "./ContentStyles.css";
 export default function Social() {
   return (
     <div className="cont">
-      Environmental sustainability refers to the responsible and balanced
-      utilization of natural resources to meet the present generation's needs
-      while ensuring the ability of future generations to fulfill their own
-      needs. It entails maintaining ecological equilibrium, conserving
-      resources, and minimizing adverse impacts on the environment.
+      Social development refers to the process through which individuals, 
+      communities, and societies acquire and enhance their social skills, 
+      relationships, norms, and values.
+      
       <p>
-        Under this framework, we encounter various challenges, including air
-        pollution, water scarcity, deforestation, loss of biodiversity, soil
-        degradation, waste management issues, vulnerability to climate change,
-        reliance on fossil fuels for energy, urban pollution and waste, wildlife
-        conservation, and the delicate balance between sustainable development
-        and poverty alleviation.
+        Some issues we face under these include inequality and social disparities, social inequality,
+        mental health challenges, urbanisation and overcrowding.
       </p>
       <ul>
         Here are some approaches to help address these problems:
         <li>
-          Individual Actions: Adopt sustainable practices in your daily life,
-          such as conserving energy and water, reducing waste, practicing
-          recycling, and using eco-friendly products. Raise awareness and
-          encourage others to embrace environmentally friendly behaviors.{" "}
+        Promote Equity and Inclusivity: Implement policies and initiatives that aim 
+        to reduce inequalities and ensure equitable access to resources, opportunities, 
+        and services for all members of society.{" "}
         </li>
         <li>
-          Support NGOs and Non-profit Organizations: Contribute to NGOs and
-          non-profit organizations dedicated to environmental sustainability in
-          India. Donate funds, volunteer your time and expertise, or participate
-          in their campaigns and initiatives.
+        Enhance Education and Skill Development: Improve the quality and 
+        accessibility of education and training programs. 
+        Focus on holistic education that promotes critical thinking, creativity, 
+        problem-solving skills etc
+
         </li>
         <li>
-          Collaboration and Networking: Collaborate with like-minded
-          individuals, organizations, and community groups to collectively
-          tackle environmental issues. Share knowledge, resources, and best
-          practices to enhance problem-solving effectiveness.
+        Promote Mental Health and Well-being: Increase awareness and 
+        access to mental health services.
+
         </li>
         <li>
-          Education and Awareness: Educate yourself and others about
-          environmental sustainability through workshops, seminars, and
-          awareness campaigns. Promote environmental education in schools and
-          communities to cultivate a culture of sustainability. By implementing
-          these strategies, we can work towards mitigating the challenges faced
-          in achieving environmental sustainability and foster a harmonious
-          coexistence with our natural surroundings.
+        Strengthen Social Support Systems: Enhance social networks, support groups, 
+        and community-based organizations that provide assistance, guidance, and mentorship.
         </li>
       </ul>
       <ul><p>By raising Rs. 5000 within a 10-day period, you

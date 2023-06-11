@@ -1,10 +1,10 @@
 import React from 'react'
-import ImgEnvir from '../Images/ImgEnvir'
+import ImgSoc from '../Images/ImgSoc'
 import Social from '../content/Social'
 export default function Envir() {
   return (
     <div>
-      <ImgEnvir img="https://media.istockphoto.com/id/1327919661/photo/world-earth-day-concept-green-energy-renewable-and-sustainable-resources-environmental-and.jpg?s=612x612&w=0&k=20&c=6PvLRMFPI65ATEs-XWPJ_UOtkmSKoONOD4h7Lohq850="></ImgEnvir>
+      <ImgSoc img="https://www.evidencebasedmentoring.org/wp-content/uploads/2020/01/ground-group-growth-hands-461049-1024x720.jpg"></ImgSoc>
       <Social/>
     </div>
   )
