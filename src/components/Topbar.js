@@ -4,7 +4,7 @@ import { Router, Routes, Route, Link } from "react-router-dom";
 import MarpuFound from "./MarpuFound";
 import Registration from "./Registration";
 import Login from "./Login";
-import Certificate from './Certificate';
+import Certificate from "./Certificate";
 import Progress from "./Progress";
 import Orientations from "./Orientations";
 import PostLogin from "./PostLogin";
@@ -14,7 +14,8 @@ import Soc from "../Routes/Soc";
 import OtherS from "../Routes/OtherS";
 const Topbar = () => {
   const handleClick = () => {
-    sessionStorage.clear();
+    console.log("calling logout");
+    localStorage.clear();
   };
   return (
     <div>
@@ -36,7 +37,6 @@ const Topbar = () => {
             {/* {
                 !sessionStorage.getItem('user') && */}
 
-               
             <div className="align-left">
               <Link className="navbar-brand" href="#" to="login">
                 Login
@@ -44,7 +44,7 @@ const Topbar = () => {
               <Link className="navbar-brand" href="#" to="register">
                 Register
               </Link>
-              <button type="button bg-primary" onClick={() => handleClick}>
+              <button type="button bg-primary" onClick={handleClick}>
                 Logout
               </button>
             </div>

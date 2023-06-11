@@ -27,9 +27,10 @@ const Login = () => {
       if (user1.email == email && user1.password == password) {
         setFlag(true);
         setTimeout(() => {
-          console.log("user5551: ", user1);
+          // console.log("user5551: ", user1);
+          localStorage.clear();
           localStorage.setItem("userData", JSON.stringify(user1));
-        }, 3000);
+        });
       }
       return user1;
     });

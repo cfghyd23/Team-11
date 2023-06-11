@@ -13,6 +13,7 @@ const Progress = () => {
     event.preventDefault();
     // alert(`The Total Outstanding amount is: ${Number(user.goalMoney)}`)
     user.currentRaised = (+user.currentRaised + +money).toString();
+
     localStorage.setItem("userData", JSON.stringify(user));
     setuser(JSON.parse(localStorage.getItem("userData")));
   };
