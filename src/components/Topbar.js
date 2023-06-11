@@ -4,7 +4,7 @@ import {Router, Routes, Route, Link } from "react-router-dom";
 import MarpuFound from "./MarpuFound";
 import Registration from "./Registration";
 import Login from "./Login";
-// import Certificate from './Certificate';
+import Certificate from './Certificate';
 import Progress from "./Progress";
 import Orientations from "./Orientations";
 import PostLogin from "./PostLogin";
@@ -26,13 +26,10 @@ const Topbar = () => {
             </Link>
             <Link className="navbar-brand" href="#" to="progress">
               Progress
-            </Link>
+  </Link>*/}
             <Link className="navbar-brand" href="#" to="certificate">
               Certification
             </Link>
-            {/* <Link className="navbar-brand" href="#" to="certificate">
-              Certificate
-            </Link> */}
             {/* {
                 !sessionStorage.getItem('user') && */}
             <div className="align-left">
@@ -58,7 +55,7 @@ const Topbar = () => {
           <Route path="/" element={<MarpuFound />} />
           <Route path="/orientation" element={<Orientations />} />         
           <Route path="/progress" element={<Progress />} />
-          {/* <Route path="/certificate" element={<Certificate />} /> */}
+          <Route path="/certificate" element={<Certificate />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register/*" element={<Registration />} />
           <Route path="/postLogin" element={<PostLogin />} />
